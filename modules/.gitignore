@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Backup files
+*.backup
+
+# Log files
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Charts output
+charts/
+
+# Environment
+.env

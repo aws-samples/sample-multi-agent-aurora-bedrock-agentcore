@@ -1,0 +1,23 @@
+# Pinned to the repo's committed uv.lock — the exact tree the test harness
+# validates. The AgentCore CodeZip build resolves the bundle's pyproject.toml
+# server-side at deploy time; floor pins (>=) let it drift to latest-on-PyPI,
+# which broke the strands track on 2026-06-01. Exact pins keep the deployed
+# runtime identical to what the harness ran. See feedback_version_upgrades.
+# (bedrock-agentcore-starter-toolkit removed — deploys use the agentcore CLI.)
+bedrock-agentcore==1.8.0
+langchain==1.2.17
+langchain-core==1.3.2
+langchain-aws==1.4.5
+langchain-mcp-adapters==0.2.2
+langgraph==1.1.10
+langgraph-checkpoint-aws==1.0.7
+mcp==1.27.0
+pandas==3.0.2
+numpy==2.4.4
+pyyaml==6.0.3
+matplotlib==3.10.9
+boto3==1.43.1
+python-dotenv==1.2.2
+opentelemetry-instrumentation-langchain==0.60.0
+opentelemetry-semantic-conventions-ai>=0.4.11
+aws-opentelemetry-distro==0.17.0

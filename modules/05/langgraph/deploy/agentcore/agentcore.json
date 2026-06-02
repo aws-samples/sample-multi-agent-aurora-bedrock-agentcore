@@ -1,0 +1,16 @@
+{
+  "name": "electrifylanggraph",
+  "version": 1,
+  "managedBy": "CDK",
+  "runtimes": [],
+  "memories": [],
+  "credentials": [],
+  "evaluators": [],
+  "onlineEvalConfigs": [],
+  "agentCoreGateways": [],
+  "policyEngines": [],
+  "harnesses": [],
+  "configBundles": [],
+  "abTests": [],
+  "httpGateways": []
+}

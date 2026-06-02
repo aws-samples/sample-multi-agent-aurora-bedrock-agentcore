@@ -1,0 +1,19 @@
+# Pinned to the repo's committed uv.lock — the exact tree the test harness
+# validates. The AgentCore CodeZip build resolves the bundle's pyproject.toml
+# server-side at deploy time; floor pins (>=) let it drift to latest-on-PyPI
+# (e.g. strands 1.42.0 on 2026-06-01) which diverged from the tested tree and
+# broke chart rendering. Exact pins keep the deployed runtime identical to what
+# the harness ran. See feedback_version_upgrades: deploy what you tested.
+# (bedrock-agentcore-starter-toolkit removed — deploys use the agentcore CLI.)
+bedrock-agentcore==1.8.0
+aws-opentelemetry-distro==0.17.0
+strands-agents[otel]==1.38.0
+strands-agents-tools==0.5.2
+mcp==1.27.0
+pandas==3.0.2
+numpy==2.4.4
+pyyaml==6.0.3
+matplotlib==3.10.9
+boto3==1.43.1
+python-dotenv==1.2.2
+requests==2.33.1

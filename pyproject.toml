@@ -1,0 +1,32 @@
+[project]
+name = "sample-collaborative-agentic-ai-aurora-bedrock-agentcore"
+version = "0.1.0"
+description = "Sample multi-agent AI app using Amazon Bedrock AgentCore, Aurora PostgreSQL, and MCP"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.40.67",
+    "python-dotenv>=1.0.0",
+    "langchain>=1.2.0",
+    "langchain-core>=1.2.0",
+    "langchain-aws>=0.2.0",
+    "langchain-mcp-adapters>=0.2.1",
+    "langgraph>=1.1.0",
+    "mcp>=1.16.0",
+    "psycopg[binary]>=3.1.0",
+    "langgraph-checkpoint-postgres>=2.0.0",
+    "pandas>=2.1.0",
+    "numpy>=1.24.0",
+    "pyyaml>=6.0",
+    "matplotlib>=3.7.0",
+    "bedrock-agentcore>=1.8.0",
+    "bedrock-agentcore-starter-toolkit>=0.3.0",
+    "langgraph-checkpoint-aws>=1.0.2",
+    "pip>=25.3",
+    "requests>=2.32.0",
+    "urllib3>=1.21.1,<2.4",
+    "chardet>=3.0.2,<6.0.0",
+    "opentelemetry-instrumentation-langchain",
+    "aws-opentelemetry-distro",
+    "strands-agents[otel]>=1.38.0",
+    "strands-agents-tools>=0.5.0",
+]
