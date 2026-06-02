@@ -1,0 +1,4 @@
+.cli/
+.cache/
+electrify_assistant/staging/
+electrify_assistant.zip

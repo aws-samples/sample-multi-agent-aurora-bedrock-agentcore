@@ -1,0 +1,39 @@
+# DataViz Agent MCP Server Configuration
+# This file configures external MCP servers that provide additional tools and capabilities
+
+mcp_servers:
+  # Example: FastMCP server with additional chart types
+  fastmcp_charts:
+    command: "uvx"
+    args: ["fastmcp@latest"]
+    transport: "stdio"
+    env:
+      FASTMCP_LOG_LEVEL: "ERROR"
+    enabled: true
+  
+  # Example: Custom Python MCP server
+  custom_server:
+    command: "python"
+    args: ["path/to/custom_server.py"]
+    transport: "stdio"
+    env:
+      DEBUG: "false"
+      API_KEY: "your-api-key-here"
+    enabled: false
+  
+  # Example: Another MCP server package
+  data_tools:
+    command: "uvx"
+    args: ["mcp-data-tools@latest", "--config", "config.json"]
+    transport: "stdio"
+    enabled: false
+
+# Configuration Notes:
+# - Each server needs a unique name under 'mcp_servers'
+# - 'command' is required and specifies the executable
+# - 'args' is optional and provides command-line arguments
+# - 'transport' defaults to "stdio" (only supported type currently)
+# - 'env' is optional and sets environment variables for the server
+# - 'enabled' defaults to true, set to false to disable a server
+# - Disabled servers are ignored during agent initialization
+# - If this file doesn't exist, the agent will work with built-in tools only
