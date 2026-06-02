@@ -23,7 +23,7 @@ dependencies = [
     "langgraph-checkpoint-aws>=1.0.2",
     "pip>=25.3",
     "requests>=2.32.0",
-    "urllib3>=1.21.1,<2.4",
+    "urllib3>=2.7.0,<2.8",
     "chardet>=3.0.2,<6.0.0",
     "opentelemetry-instrumentation-langchain",
     "aws-opentelemetry-distro",
