@@ -25,6 +25,10 @@ side by side.
 
 ```
 modules/
+├── 01/    — MCP primer (single file)
+│            A minimal raw Model Context Protocol client (mcp.ClientSession
+│            over stdio) — the protocol fundamentals before any agent
+│            framework. Start here to see MCP with no abstractions.
 ├── 02/    — Custom MCP server + first agent (Electrify)
 │            Aurora PostgreSQL queries exposed as MCP tools, agent
 │            consumes them via stdio transport.
@@ -39,8 +43,10 @@ modules/
              with deploy scripts (deploy_lambda.py, deploy_gateway_simple.py).
 ```
 
-Each module has both `langgraph/` and `strands/` subdirectories implementing
-the same logical agent in each framework.
+Module numbering follows the companion workshop's chapters; this repo
+includes the agent-code modules (01–05). Modules 02–05 each have both
+`langgraph/` and `strands/` subdirectories implementing the same logical
+agent in each framework; module 01 is a single framework-agnostic file.
 
 ## Architecture
 
